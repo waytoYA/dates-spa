@@ -1,0 +1,62 @@
+.circle{
+    position: absolute;
+    width: 530px;
+    height: 530px;
+    top: 215px;
+    left: 455px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(66, 86, 122, 0.2);
+
+    transition: all 0.8s ease-in;
+}
+
+.circle__point1, .circle__point2, .circle__point3,
+.circle__point4, .circle__point5, .circle__point6{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+
+    background: #42567A;
+    border-radius: 50%;
+}
+
+.circle__block{
+    // круг
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    position: absolute;
+    top: -26px;
+    left: -26px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    // номер
+    text-align: center;
+    line-height: 56px;
+    color: transparent;
+    font-size: 20px;
+    
+    &:hover{
+        background: #F4F5F9;
+        color: #42567A;
+        border: 1px solid rgba(48, 62, 88, 0.5);
+    }
+}
+
+.circle__block--active{
+    background: #F4F5F9;
+    color: #42567A;
+    border: 1px solid rgba(48, 62, 88, 0.5);
+}
+
+//
+// media
+// 
+
+@media (max-width: 1440px) {
+    .circle{
+        display: none;
+    }
+}

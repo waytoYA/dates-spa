@@ -1,0 +1,98 @@
+.mainBlock__toggle{
+  margin-top: 137px;
+  margin-left: 80px;
+}
+
+.mainBlock__toggle__numbers{
+  font-size: 14px;
+  line-height: 18px;
+  color: #42567A;
+}
+
+.mainBlock__toggle__buttons{
+  margin-top: 20px;
+}
+
+
+.mainBlock__toggle__button{
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgba(66, 86, 122, 0.5);
+  cursor: pointer;
+
+  &:hover{
+    background-color: #fff;
+  }
+
+  &::after{
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 10px;
+    height: 14px;
+
+    top: 18px;
+    left: 18px;
+
+    background-image: url('../img/strelka2.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.mainBlock__toggle__button--inactive{
+  opacity: 0.6;
+  cursor: default !important;
+}
+
+.buttonLeft{
+  margin-right: 20px;
+}
+
+.buttonRight{
+  &::after{
+    transform: rotate(180deg);
+  }
+}
+
+
+
+//
+// media
+// 
+
+@media (max-width: 600px) {
+  .mainBlock__toggle{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+  }
+
+  .mainBlock__toggle__buttons{
+    margin-top: 10px;
+  }
+
+  .mainBlock__toggle__button{
+    width: 25px;
+    height: 25px;
+
+    &::after{
+      left: 6px;
+      top: 5px;
+
+      transform: scale(50%) ;
+    }
+  }
+
+  .buttonRight{
+    &::after{
+      transform: rotate(180deg) scale(50%);
+    }
+  }
+  
+  .buttonLeft{
+    margin-right: 8px;
+  }
+}

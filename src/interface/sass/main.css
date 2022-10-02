@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap");
+body {
+  font-size: 14px;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #F4F5F9;
+}
+
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  max-height: 1080px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid rgba(66, 86, 122, 0.1);
+  border-right: 1px solid rgba(66, 86, 122, 0.1);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    border: none;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button, input[type="submit"] {
+  background: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.mainBlock {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.mainBlock__title {
+  width: 353px;
+  margin-top: 170px;
+  padding-left: 78px;
+  clip: rect(0px, 85px, 170px, 0px);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  color: #42567A;
+  border-left: 5px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F4F5F9), to(#F4F5F9)) no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(-5%, #3877EE), color-stop(85%, #EF5DA8));
+  background: linear-gradient(#F4F5F9, #F4F5F9) no-repeat, linear-gradient(180deg, #3877EE -5%, #EF5DA8 85%);
+}
+
+.mainBlock__date {
+  pointer-events: none;
+  text-align: center;
+  margin-top: 96px;
+  font-weight: 700;
+  line-height: 160px;
+  letter-spacing: -0.02em;
+  font-size: 200px;
+}
+
+.mainBlock__date--start {
+  display: inline-block;
+  color: #5D5FEF;
+  margin-right: 96px;
+}
+
+.mainBlock__date--end {
+  display: inline-block;
+  color: #EF5DA8;
+}
+
+.mainBlock__nameDate {
+  position: absolute;
+  top: 230px;
+  left: 905px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #42567A;
+}
+
+@media (max-width: 1440px) {
+  .mainBlock__nameDate {
+    position: initial;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainBlock {
+    padding: 0 20px;
+    padding-bottom: calc(57px - 30px);
+    border-bottom: 1px solid #C7CDD9;
+    position: initial;
+  }
+  .mainBlock__title {
+    width: 123px;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0;
+    margin-top: 59px;
+    background: none;
+  }
+  .mainBlock__date {
+    margin-top: 56px;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: initial;
+  }
+  .mainBlock__date--start {
+    margin-right: 30px;
+    color: #3877EE;
+  }
+}
+
+.infoBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 56px;
+}
+
+.infoBlock .swiper {
+  margin: 0 20px;
+}
+
+.infoBlock__news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoBlock__item {
+  max-width: 320px;
+}
+
+.infoBlock__item + .infoBlock__item {
+  margin-left: 80px;
+}
+
+.infoBlock__item__year {
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3877EE;
+}
+
+.infoBlock__item__text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #42567A;
+}
+
+.infoBlock__button__prev, .infoBlock__button__next {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+          box-shadow: 0px 0px 15px rgba(56, 119, 238, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+.infoBlock__button__prev::after, .infoBlock__button__next::after {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 14px;
+  left: 16px;
+  background-image: url("../img/strelka.svg");
+  background-repeat: no-repeat;
+}
+
+.infoBlock__button__prev {
+  margin-left: 20px;
+}
+
+.infoBlock__button__prev::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.infoBlock__button__next {
+  margin-right: 20px;
+}
+
+.infoBlock__pagination {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #42567A;
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .infoBlock {
+    margin-top: 20px;
+  }
+  .infoBlock .swiper {
+    margin: 0px;
+    padding-left: 20px;
+  }
+  .infoBlock__item {
+    max-width: 166px;
+  }
+  .infoBlock__item + .infoBlock__item {
+    margin-left: 25px;
+  }
+  .infoBlock__item__year {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+  }
+  .infoBlock__item__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .infoBlock__button__prev, .infoBlock__button__next {
+    display: none;
+  }
+  .infoBlock__pagination {
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
+    width: max-content !important;
+    display: block;
+    position: absolute;
+    bottom: 18px !important;
+    left: 100px !important;
+  }
+}
+
+.line-horizontal {
+  position: absolute;
+  width: 100%;
+  top: 480px;
+  border: 1px solid rgba(66, 86, 122, 0.1);
+}
+
+.line-vertical {
+  position: absolute;
+  height: 100%;
+  left: 720px;
+  border: 1px solid rgba(66, 86, 122, 0.1);
+}
+
+@media (max-width: 1440px) {
+  .line-horizontal {
+    display: none;
+  }
+  .line-vertical {
+    display: none;
+  }
+}
+
+.mainBlock__toggle {
+  margin-top: 137px;
+  margin-left: 80px;
+}
+
+.mainBlock__toggle__numbers {
+  font-size: 14px;
+  line-height: 18px;
+  color: #42567A;
+}
+
+.mainBlock__toggle__buttons {
+  margin-top: 20px;
+}
+
+.mainBlock__toggle__button {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgba(66, 86, 122, 0.5);
+  cursor: pointer;
+}
+
+.mainBlock__toggle__button:hover {
+  background-color: #fff;
+}
+
+.mainBlock__toggle__button::after {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 10px;
+  height: 14px;
+  top: 18px;
+  left: 18px;
+  background-image: url("../img/strelka2.svg");
+  background-repeat: no-repeat;
+}
+
+.mainBlock__toggle__button--inactive {
+  opacity: 0.6;
+  cursor: default !important;
+}
+
+.buttonLeft {
+  margin-right: 20px;
+}
+
+.buttonRight::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+@media (max-width: 600px) {
+  .mainBlock__toggle {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+  }
+  .mainBlock__toggle__buttons {
+    margin-top: 10px;
+  }
+  .mainBlock__toggle__button {
+    width: 25px;
+    height: 25px;
+  }
+  .mainBlock__toggle__button::after {
+    left: 6px;
+    top: 5px;
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+  }
+  .buttonRight::after {
+    -webkit-transform: rotate(180deg) scale(50%);
+            transform: rotate(180deg) scale(50%);
+  }
+  .buttonLeft {
+    margin-right: 8px;
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 530px;
+  height: 530px;
+  top: 215px;
+  left: 455px;
+  border-radius: 50%;
+  border: 1px solid rgba(66, 86, 122, 0.2);
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+}
+
+.circle__point1, .circle__point2, .circle__point3,
+.circle__point4, .circle__point5, .circle__point6 {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #42567A;
+  border-radius: 50%;
+}
+
+.circle__block {
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  position: absolute;
+  top: -26px;
+  left: -26px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  line-height: 56px;
+  color: transparent;
+  font-size: 20px;
+}
+
+.circle__block:hover {
+  background: #F4F5F9;
+  color: #42567A;
+  border: 1px solid rgba(48, 62, 88, 0.5);
+}
+
+.circle__block--active {
+  background: #F4F5F9;
+  color: #42567A;
+  border: 1px solid rgba(48, 62, 88, 0.5);
+}
+
+@media (max-width: 1440px) {
+  .circle {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
