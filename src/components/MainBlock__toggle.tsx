@@ -3,8 +3,8 @@ import { IMainBlock } from './MainBlock';
 
 const MainBlock__toggle = ({number, move}: IMainBlock) => {
 
-  // div onClick - плохая практика.
-  // В следующих обновлениях уберу :)
+  // div onClick - не самый лучший выбор.
+  // Но здесь эта реализация необходима
 
   return (
 
