@@ -23,9 +23,8 @@ const App = () => {
 
       if (!strictValue){
         //Animation
-        let block = document.body.querySelector(`.circle__point${strictValue || number + n}`)?.children[0]!
-
-        //@ts-ignore
+        let block = document.body.querySelector(`.circle__point${strictValue || number + n}`)?.children[0]! as HTMLElement;
+        
         block.click()
       }
     }
