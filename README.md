@@ -1,5 +1,3 @@
-Test task for Only. waytoya.
+Это SPA (Single Page Application). Большая часть этой работы создана с целью демонстрации кода и интерфейса. Можете просто потыкать и посмотреть :)
 
-Для запука в терминале:
-1. npm i
-2. npm start
+WAYTOYA. dates
