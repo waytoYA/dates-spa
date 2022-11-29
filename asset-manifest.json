@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dates-spa/static/css/main.a9a1c95c.css",
+    "main.js": "/dates-spa/static/js/main.dbd3fee9.js",
+    "index.html": "/dates-spa/index.html",
+    "static/media/strelka2.svg": "/dates-spa/static/media/strelka2.f992fd0b2072543913c8.svg",
+    "static/media/strelka.svg": "/dates-spa/static/media/strelka.42a00e1042e62dbb933e.svg",
+    "main.a9a1c95c.css.map": "/dates-spa/static/css/main.a9a1c95c.css.map",
+    "main.dbd3fee9.js.map": "/dates-spa/static/js/main.dbd3fee9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9a1c95c.css",
+    "static/js/main.dbd3fee9.js"
+  ]
+}
